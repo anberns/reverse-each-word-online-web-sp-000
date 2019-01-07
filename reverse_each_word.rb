@@ -1,6 +1,6 @@
 def reverse_each_word(str)
   spl = str.split
-  spl.each do |val|
+  spl.collect do |val|
     val.reverse!
   end
   rev = spl.join(" ")
